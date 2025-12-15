@@ -1,6 +1,8 @@
 import "./App.css";
 import Accordion from "./components/Accordion";
 import ColorGen from "./components/ColorGen";
+import StarRating from "./components/StarRating";
+import StarRating2 from "./components/StarRating2";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <div className="w-full max-w-3xl">
         <Accordion />
         <ColorGen></ColorGen>
+        {/* <StarRating></StarRating> */}
+        <StarRating2></StarRating2>
       </div>
     </div>
   );

@@ -11,6 +11,15 @@ const ColorGen = () => {
     console.log(next);
   };
 
+  
+
+  const handleRGBgen = ()=>{
+    const r = Math.floor(Math.random()* (255-0)).toString().padStart(3,0);
+    const g = Math.floor(Math.random()* (255-0)).toString().padStart(3,0);
+    const b = Math.floor(Math.random()* (255-0)).toString().padStart(3,0);
+    console.log(r,g,b,"color")
+  }
+
   return (
     <div className="mt-10 w-full max-w-xl rounded-3xl bg-white/85 backdrop-blur shadow-xl shadow-slate-200 border border-slate-100/80 p-6 space-y-6">
       <div className="flex items-start justify-between gap-4">
@@ -48,6 +57,14 @@ const ColorGen = () => {
         >
           Generate
         </button>
+        <button
+          onClick={handleRGBgen}
+          className="shrink-0 rounded-2xl bg-sky-600 px-4 py-3 text-white font-semibold shadow-lg shadow-sky-200/70 transition hover:-translate-y-0.5 hover:bg-sky-700"
+        >
+          RGB gen
+        </button>
+        
+
       </div>
     </div>
   );
